@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Recursive", "sans serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(19, 160, 0);
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.movie-container select {
+  margin: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 7px 5px;
+}
+
+.seat {
+  background-color: #777;
+  width: 8%;
+  height: 30px;
+  margin: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.seat2 {
+  background-color: #777;
+  width: 15px;
+  height: 12px;
+  margin: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.seat.selected,.seat2.selected {
+  background-color: #00FF9C;
+}
+
+.seat.occupied,.seat2.occupied {
+  background-color: #F72C5B;
+}
+.seat:nth-of-type(2) {
+  margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 20px;
+}
+
+.container .seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase {
+  background: rgba(31, 31, 31, 0.89);
+  padding: 5px 10px;
+  color: #777;
+  border-radius: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center   ;
+}
+
+.container {
+    width: 60%;
+  perspective: 350px;
+  margin-bottom: 15px;
+}
+
+.screen {
+  width: 90%;
+  height: 70px;
+  background-color: #BFECFF;
+  background-image: url("https://i.ytimg.com/vi/rf94fOuWKa4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBPlElt7VQ_2UauDsMq8VNe5T93UQ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin: 20px auto;
+  box-shadow: 0 3px 12px rgba(255, 255, 255, 0.7);
+  transform: rotateX(-45deg);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}
